@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+    <PackageReference Include="prmToolkit.Selenium" Version="1.0.3" />
+  </ItemGroup>
+
 </Project>

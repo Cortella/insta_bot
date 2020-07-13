@@ -6,27 +6,17 @@ namespace insta_bot
 {
     class Profile
     {
-        public string Id { get; set; }
+        public string UserName { get; private set; }
         public string Senha { get; set; }
-        public string Nome { get; set; }
-        public int Seguidores { get; set; }
-        public int Seguindo { get; set; }
-        public bool Logado { get; set; }
+        public string Descricao { get; set; }
+        public int NumSeguidores { get; set; }
+        public int NumSeguindo { get; set; }
 
-        Profile(string Id_, string Senha_)
+        public Profile(string userName,string senha)
         {
-            Id = Id_;
-            Senha = Senha_;
-            Nome = "";
-            Seguidores = 0;
-            Seguindo = 0;
-            Logado = false;
+            UserName = userName;
+            Senha = senha;
+            Descricao = "Descricao";
         }
-
-        public void Logar()
-        {
-            
-        }
-
     }
 }
